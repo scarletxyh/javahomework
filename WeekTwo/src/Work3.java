@@ -6,13 +6,10 @@ public class Work3 {
 		for(int i = 0; i < 100; i++) {
 			int key = (int)(Math.random() * 10);
 			CountNum[key]++;
-			System.out.print(key + " ");
 		}
-		System.out.println();
 		for(int i = 0; i < 10; i++) {
 			System.out.println(i + " : " + CountNum[i]);
-		}
-		
+		}	
 	}
 	public static void main(String[] Args) {
 		countNumber();

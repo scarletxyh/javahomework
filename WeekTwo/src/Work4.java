@@ -14,14 +14,15 @@ public class Work4 {
 	}
 	public static void main(String[] Args) {
 		Scanner in = new Scanner(System.in);
-		int n = in.nextInt();
-		double[] arr = new double[n];
-		/*随机给数组赋值一系列无序的浮点数序列*/
-		for(int i = 0; i < n; i++) arr[i] = (int)(Math.random() * 10000)/1000.0;
+		double[] arr = new double[10];
+		System.out.println("Please enter 10 numbers");
+		/*让用户输入10个数*/
+		for(int i = 0; i < 10; i++) {
+			System.out.print(i + 1 + " : ");
+			arr[i] = in.nextDouble();
+		}
 		/*输出数组的序列*/
-		for(double db : arr)System.out.print(db + " ");
-		System.out.println();
 		int SmallestIndex = indexOfSmallestElement(arr);
-		System.out.print(SmallestIndex);
+		System.out.print("The index of the smallest number is : " + SmallestIndex);
 	}
 }

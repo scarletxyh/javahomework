@@ -7,10 +7,11 @@ public class Work1 {
 			res = res*10 + number%10;
 			number /= 10;
 		}
-		System.out.print(res);
+		System.out.print("The reverse of the number is : " + res + "\n");
 	}
 	public static void main(String[] Args) {
 		Scanner in = new Scanner(System.in);
+		System.out.print("Please enter a number : ");
 		int res = in.nextInt();
 		reverse(res);
 	}

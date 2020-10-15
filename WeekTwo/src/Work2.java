@@ -12,6 +12,7 @@ public class Work2 {
     }
     public static void main(String[] Args) {
     	Scanner in = new Scanner(System.in);
+    	System.out.print("Enter n : ");
 		int res = in.nextInt();
 		printMatrix(res);
     }
